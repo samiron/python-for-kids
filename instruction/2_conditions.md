@@ -1,6 +1,4 @@
-# Table of Contents
 
-- [Table of Contents](#table-of-contents)
 - [2. Conditions in Python](#2-conditions-in-python)
   - [2.1. What are Conditions?](#21-what-are-conditions)
   - [2.2. Using if Statements](#22-using-if-statements)
