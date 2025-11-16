@@ -4,6 +4,10 @@
   - [1.1. Printing Values in Python](#11-printing-values-in-python)
   - [1.2. Using Functions](#12-using-functions)
   - [1.3. Using even more functions](#13-using-even-more-functions)
+  - [1.4. Variables](#14-variables)
+  - [1.5. Printing with variables](#15-printing-with-variables)
+  - [1.6. Taking input from the user](#16-taking-input-from-the-user)
+  - [1.7. Comments in Python](#17-comments-in-python)
 
 
 # 1. General Concepts
@@ -164,3 +168,99 @@ print("  spaced  ".strip()) # prints "spaced" (removes whitespace)
   * `str.isdigit`
   * `str.split`
   * `str.join`
+
+## 1.4 Variables
+* Variables are used to store values so we can use them later.
+* You can think of variables as labeled boxes that hold information.
+* To create a variable, you give it a name and assign it a value using the equals sign `=`.
+* We can print the value of a variable by using its name inside the `print` function.
+
+```python
+name = "Alice"          # string variable
+print(name)             # Printing the string variable
+
+my_age = 10                # integer variable
+print(my_age)              # Printing the integer variable
+
+height = 4.5            # float variable
+print(height)           # Printing the float variable
+
+is_student = True       # boolean variable
+print(is_student)       # Printing the boolean variable
+```
+
+* We can also use variables in math operations.
+
+```python
+my_age = 10                         # integer variable
+dad_age = 40                        # integer variable
+age_difference = dad_age - my_age   # calculating age difference
+
+print(age_difference)               # Printing the age difference
+```
+
+#### 🧐 Checkpoint Questions
+* Why do we use variables in programming?
+* How do you create a variable in Python?
+* What is the difference between values and variables?
+
+#### 🎯 Fun Exercises
+* Create a variable called `favorite_color` and assign it your favorite color as a string. Then print the variable.
+* Create two variables: `pizza_slices` (set it to 8) and `friends` (set it to 4). Calculate how many slices each friend gets by dividing `pizza_slices` by `friends`, store the result in a variable called `slices_per_friend`, and print it.
+* Create two variables for the length and width of a rectangle (use any numbers you like). Calculate the area by multiplying length and width, store it in a variable called `area`, and print the result.
+* Create a variable `price` (set it to 25) and another variable `discount` (set it to 5). Calculate the final price after discount by subtracting `discount` from `price`, and print the result.
+* Create two variables `temperature_fahrenheit` (set it to 98.6) and `conversion_factor` (set it to 1.8). Calculate Celsius using the formula: `(temperature_fahrenheit - 32) / conversion_factor`. Store the result in a variable and print it.
+* Challenge: Create variables for hours worked (40) and hourly rate (15). Calculate the weekly pay and print it. Then create a variable for tax rate (0.2, which is 20%) and calculate the pay after taxes. Print both the total pay and pay after taxes.
+
+
+## 1.5 Printing with variables
+* We can use variables inside the `print` function to display their values.
+* When we use a variable in `print`, Python replaces the variable name with its value.
+
+```python
+name = "Alice"
+print("Hello, " + name + "!")   # prints "Hello, Alice!"  
+print(f"Hello, {name}!")        # prints "Hello, Alice!" using f-string
+```
+* In the first example, we use the `+` operator to concatenate (join) strings.
+* In the second example, we use an f-string (formatted string) to embed the variable directly in the string.
+
+#### 🧐 Checkpoint Questions
+* What happens when you use a variable inside the `print` function?
+* What is the difference between using `+` to concatenate strings and using an f-string?
+
+#### 🎯 Fun Exercises
+* Create a variable `city` and assign it the name of your favorite city. Use `print` to say "I love [city]!" using both concatenation and an f-string.
+* Create variables `first_name` and `last_name`. Use `print` to display "My name is [first_name] [last_name]." using both methods.
+* Create a variable `age` and assign it your age. Use `print` to say "I am [age] years old." using both concatenation and an f-string.
+
+## 1.6 Taking input from the user
+* We can take input from the user using the `input()` function.
+* The `input()` function displays a prompt to the user and waits for them to type something and press Enter.
+* The value entered by the user is returned as a string.
+* We can store the input in a variable for later use.
+
+```python
+name = input("What is your name? ")   # prompt the user for their name
+print(f"Hello, {name}!")               # greet the user using their name
+```
+
+* Sometimes we need to convert the input to a different type (like integer or float) since `input()` always returns a string.
+
+```python
+age = int(input("How old are you? "))   # prompt the user for their age
+next_year_age = age + 1                  # calculate age next year
+print(f"Next year, you will be {next_year_age} years old.")  # print the result
+```
+* In this example, we convert the input string to an integer using `int()`.
+
+## 1.7 Comments in Python
+* Comments are notes in the code that are ignored by Python when the program runs.
+* They are used to explain what the code does or to leave reminders for yourself or others.
+* In Python, comments start with the `#` symbol. Everything after `#` on that line is considered a comment.
+
+Example:
+```python
+# This is a comment
+print("Hello, World!")  # This prints a greeting message
+```
