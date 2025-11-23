@@ -179,8 +179,8 @@ print("  spaced  ".strip()) # prints "spaced" (removes whitespace)
 name = "Alice"          # string variable
 print(name)             # Printing the string variable
 
-my_age = 10                # integer variable
-print(my_age)              # Printing the integer variable
+my_age = 10             # integer variable
+print(my_age)           # Printing the integer variable
 
 height = 4.5            # float variable
 print(height)           # Printing the float variable
